@@ -170,14 +170,14 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// =================== تغيير لوجو الموقع عند التمرير ===================
 const logo = document.getElementById("main-logo");
-const originalLogo = "/static/images/ALHANAA_Logo_Clean.webp";
-const whiteLogo = "/static/images/ALHANAA_Logo_White.webp";
+const originalLogo = "static/images/ALHANAA_Logo_Clean.webp";
+const whiteLogo = "static/images/ALHANAA_Logo_White.webp";
 
 window.addEventListener("scroll", function () {
   logo.src = window.scrollY > 50 ? whiteLogo : originalLogo;
 });
+
 
 // =================== سلايدر أفقي تلقائي ===================
 //const slider = document.getElementById('slider');
