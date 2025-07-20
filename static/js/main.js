@@ -171,8 +171,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 const logo = document.getElementById("main-logo");
-const originalLogo = "static/images/ALHANAA_Logo_Clean.webp";
-const whiteLogo = "static/images/ALHANAA_Logo_White.webp";
+const originalLogo = "/Demo_Alhanaa/static/images/ALHANAA_Logo_Clean.png";
+const whiteLogo = "/Demo_Alhanaa/static/images/ALHANAA_Logo_White.png";
 
 window.addEventListener("scroll", function () {
   logo.src = window.scrollY > 50 ? whiteLogo : originalLogo;
