@@ -1164,6 +1164,33 @@ transform: scale(1);
   object-fit: contain;
   transition: transform 0.3s ease;
 }
+.table-responsive {
+  position: relative;
+  overflow-x: scroll; /* بدل auto */
+  scroll-behavior: smooth;
+  scrollbar-width: thin; /* لمتصفح Firefox */
+  scrollbar-color: #3A986C #f1f1f1;
+}
+
+/* ✅ لجعل شريط التمرير دائم الظهور في WebKit browsers (Chrome, Safari) */
+.table-responsive::-webkit-scrollbar {
+  height: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #3A986C;
+  border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #2c7d57;
+}
+
 
 .fruit-img:hover {
   transform: scale(1.2);
